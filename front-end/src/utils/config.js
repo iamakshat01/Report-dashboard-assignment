@@ -1,1 +1,1 @@
-export const REACT_APP_API_URL="https://report-dashboard-assignment.onrender.com:8080/"
+export const REACT_APP_API_URL="http://report-dashboard-assignment.onrender.com/api/"

@@ -22,12 +22,12 @@ const storage = multer.diskStorage({
 });
 
 const upload = multer({ storage: storage });
-router.post("/upload", upload.single("file"), fileUploadHandler);
-router.get("/download/:id", fileDownloadHandler);
-router.get("/file/:id", fileGetHandler);
-router.post("/file/:id", postTagsForFileHandler);
-router.get("/allFilesWithTag", getFilesWithTagHandler);
-router.get("/allFilesWithDate", getFilesWithDateHandler);
-router.get("/allFiles", allFileGetHandler);
+router.post("/api/upload", upload.single("file"), fileUploadHandler);
+router.get("/api/download/:id", fileDownloadHandler);
+router.get("/api/file/:id", fileGetHandler);
+router.post("/api/file/:id", postTagsForFileHandler);
+router.get("/api/allFilesWithTag", getFilesWithTagHandler);
+router.get("/api/allFilesWithDate", getFilesWithDateHandler);
+router.get("/api/allFiles", allFileGetHandler);
 
 module.exports = router;
