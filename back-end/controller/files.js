@@ -25,7 +25,7 @@ const fileDownloadHandler = async (req, res, next) => {
   try {
     const { id } = req.params;
     const fileRecord = await db.File.findById(id);
-    const filePath = process.env.DIR + "\\" + fileRecord.Name;
+    const filePath = process.env.DIR + "/" + fileRecord.Name;
     // Send the file for download
     res.download(filePath, fileRecord.Name, (err) => {
       if (err) {
