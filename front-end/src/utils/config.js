@@ -1,1 +1,1 @@
-export const REACT_APP_API_URL="http://locahost:4000/api/"
+export const REACT_APP_API_URL="http://localhost:4000/api/"
